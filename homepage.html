@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<style>
+
+		.color{
+			background-color: #cce5ff;
+		}
+		/* Placing RDIP to top right corner */
+		.topright {
+			position: absolute;
+			top: 50px;
+			right: 150px;
+			font-size: 22px;
+		}
+
+		/* Add right margin for the image */
+		#padding {
+			margin-right: 50px;
+		}
+  
+  		/* Creates a navigation bar */
+		ul {
+		  	list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: teal;
+		}
+
+		/* Set home and registration to the left*/
+		li {
+  			float: left;
+		}
+
+		/* Sets home and registration in a horizontal navigation bar */
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/* Changing the link color */
+		li a:hover {
+  			background-color: black;
+		}
+
+		/* Add borders and padding to the table */
+		table, th, td {
+			border: 2px solid green;
+			border-collapse: collapse;
+			padding: 10px;
+		}
+
+		/* Setting border and padding to the paragraph */ 
+		.myDiv{
+			border: 2px outset pink;
+			width: 550px;
+			padding-top:1em;
+			padding-right:1em;
+			padding-bottom:1em;
+			padding-left:1em;
+		}
+
+
+	</style>
+</head>
+
+<!-- Body -->
+<body>
+	<!--IIIT image link and RDIP link in a division -->
+	<div class="color">
+		<!-- Hit the logo to navigate to the main page of IIIT -->
+		<a href="https://www.iiit.ac.in/" target="_blank">
+			<img src = "https://www.iiit.ac.in/img/iiit-new.png" width="200" height="100">
+		</a>
+
+		<!-- Click on the RDIP link to navigate to the main page RDIP. Create topright class to place the RDIP link-->
+		<a href="https://serc.iiit.ac.in/rdip" class="topright">RDIP</a>
+	</div>
+
+	<!-- Create Home and Registration navigation bars -->
+	<ul>
+		<li><a href="file:///C:/Users/jahna/IIIT_Intern/rdip/homepage.html">Home</a></li>
+	  	<li><a href="file:///C:/Users/jahna/IIIT_Intern/rdip/registration.html">Registration</a></li>
+	</ul>
+
+	<!-- Table and Profile picture in a division -->
+	<div>
+		<!--Heading -->
+		<h3>My Details</h3>
+
+		<!-- Creating table -->
+		<table style="width:50%"><img id="padding" src="C:\Users\jahna\IIIT_Intern\jahnavi.jpg" alt="Profile Picture" style="float:right;top:10;width:200px;height:200px;">
+			<!-- Create rows, <b></b> for making text bold -->
+			<tr>
+				<td><b>Name</b></td>
+				<td>Jahnavi Jonnalagadda</td>
+			</tr>
+			<tr>
+				<td><b>College</b></td>
+				<td>Chaitanya Bharathi Institute of Technology</td>
+			</tr>
+			<tr>
+				<td><b>Reason</b></td>
+				<td>Get a hands-on experience on real-time projects and internship. To skill up HTML, CSS and Javascript knowledge</td>
+			</tr>
+		</table>
+
+	</div>
+
+	<br><br>
+
+	<!-- Writing a paragraph -->
+	<p class="myDiv">
+		Thanks to Remote Digital Internship(RDIP), SERC IIIT Hyderabad for giving me an opportunity to work on live open source projects. It's been a week the internship started, it taught Github, HTML and CSS in detail along with daily tasks which kept me consistent and focussed towards my goals. The parallel learning and practicing helped me grow my HTML&CSS knowledge. Built web pages, forms, tables and many along with CSS. The first week has been exciting and kept me motivated for the rest of the journey. 
+	</p>
+
+</body>
+
+</html>

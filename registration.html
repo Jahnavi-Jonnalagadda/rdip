@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<style>
+		.color{
+			background-color: #cce5ff;
+		}
+		/* Placing RDIP to top right corner */
+		.topright {
+			position: absolute;
+			top: 50px;
+			right: 150px;
+			font-size: 22px;
+		}
+
+		/* Creates a navigation bar */
+		ul {
+		  	list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: teal;
+		}
+
+		/* Set home and registration to the left*/
+		li {
+  			float: left;
+		}
+
+		/* Sets home and registration in a horizontal navigation bar */
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/* Changing the link color */
+		li a:hover {
+  			background-color: black;
+		}
+
+		/* Sets border, padding and margins for the registration form */
+		.myDiv{
+			border: 2px outset blue;
+			width: 400px;
+			padding-top:1em;
+			padding-right:1em;
+			padding-bottom:1em;
+			padding-left:5em;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	</style>
+
+</head>
+
+<!--Body -->
+<body style="background-color:#e8daef;">
+	<!--IIIT image link and RDIP link in a division -->
+	<div class="color">
+		<!-- Hit the logo to navigate to the main page of IIIT -->
+		<a href="https://www.iiit.ac.in/" target="_blank">
+			<img src = "https://www.iiit.ac.in/img/iiit-new.png" width="200" height="100">
+		</a>
+
+		<!-- Click on the RDIP link to navigate to the main page RDIP. Create topright class to place the RDIP link-->
+		<a href="https://serc.iiit.ac.in/rdip" class="topright">RDIP</a>
+	</div>
+
+	<!-- Create Home and Registration navigation bars -->
+	<ul>
+		<li><a href="file:///C:/Users/jahna/IIIT_Intern/rdip/homepage.html">Home</a></li>
+	  	<li><a href="file:///C:/Users/jahna/IIIT_Intern/rdip/registration.html">Registration</a></li>
+	</ul>
+
+	<br>
+
+	<!-- Create form -->
+	<form class="myDiv" method="GET" action="C:\Users\jahna\IIIT_Intern\rdip\details.html">
+		<div style="margin: 0 auto;">
+			<!-- First Name -->
+			<label for="fname"><b>First Name: </b></label>
+			<input type="text" name="fname" size="30" required><br><br>
+
+			<!--Last Name -->
+			<label for="lname"><b>Last Name: </b></label>
+			<input type="text" name="lname" size="30" required><br><br>
+
+			<!--Email ID -->
+			<label for="email"><b>Email ID: </b></label>
+			<input type="text" name="email" size="32" required><br><br>
+
+			<!-- Mobile Number -->
+			<label for="phno" id="label"><b>Mobile Number: </b></label>
+			<input type="text" name="phno" size="25" required><br><br>
+
+			<!--Gender -->
+			<label for="gender" required><b>Gender: </b></label>
+
+			<input type="radio" id="male" name="male" value="male" required="required">
+			<label for="male">Male</label>
+
+			<input type="radio" id="female" name="female" value="female">
+			<label for="female">Female</label>
+
+			<input type="radio" id="other" name="other" value="other">
+			<label for="other">Other</label><br><br>
+
+			<!--Reason for RDIP-->
+			<label for="rdip"><b>Reason for RDIP: </b></label>
+
+			<input type="radio" id="html" name="html" value="html" required>
+			<label for="html">HTML</label>
+
+			<input type="radio" id="css" name="css" value="css">
+			<label for="css">CSS</label>
+
+			<input type="radio" id="js" name="js" value="js">
+			<label for="js">JavaScript</label><br><br>
+
+			<!-- College -->
+			<label for="clgname" id="label"><b>College: </b></label>
+			<input type="text" name="clgname" size="34" required><br><br>
+
+			<input type="checkbox" name="check" required>
+			<label for="check">I declare all above details by me are true<br><br>
+
+			<!-- submit button -->
+			<button type="reset">Reset</button>
+			<button type="submit">Submit</button>
+		</div>
+
+	</form>
+
+
+</body>
+
+</html>
