@@ -1,0 +1,19 @@
+body{
+	background-color: #d4e6f1;
+	font-family: system-ui;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 50px;
+}
+
+input{
+	padding: 10px;
+	border: 1px solid green;
+
+}
+
+button{
+	padding: 10px;
+	font-size: 12px;
+	font-weight: bold;
+}
